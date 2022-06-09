@@ -64,6 +64,9 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     }
 
     .nav-container {
@@ -785,9 +788,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 40px;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 .WhatIsTitle {
@@ -828,9 +828,6 @@ body {
     top: 50%;
     transform: translateY(-52%);
     margin-left: 450px;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 .DisTitle {
@@ -890,9 +887,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 40px;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 .ptitle {
