@@ -1,193 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" href="style.css">
-		<!--<link rel="shortcut icon" type="image/png" href="img/logo.png">-->
-		<link rel="shortcut icon" type="image/webp" href="img/ticon.webp">
+		<link rel="shortcut icon" type="image/png" href="img/logoanisuperblackandwhite.png">
+		<link rel="stylesheet" href="styletry.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/5.0.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 		<script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
-		<title>Technic - Official Website - Home</title>
+		<title>Ani Super - Official Website</title>
 	</head>
 	<body>
-		<section class="homesec">
-			<div class="blacksechome">
-				<!--<a href="atargallery.html"><i class="fa-solid fa-image gallerybtn"></i></a>-->
-				<div class="nav-container">
-					<nav class="navbar">
-						<!--<h1 id="navbar-logo">TECHNIC<img class="textlogo" src="img/logotext.png"></h1>-->
-						<div class="menu-toggle" id="mobile-menu">
-							<span class="bar"></span>
-							<span class="bar"></span>
-							<span class="bar"></span>
-						</div>
-						<ul class="nav-menu">
-							<!--<li><a class="nav-links ytbtn" href="https://www.youtube.com/channel/UCEbhxAHWDbAijGxbkC9AuLA?sub_confirmation=1"><i class="fa fa-youtube-play"></i></a></li>
-							<li><a class="nav-links twbtn" href="https://twitter.com/technic00823661"><i class="fa fa-twitter"></i></a></li>
-							<li><a class="nav-links barline"><i class="fas fa-grip-lines-vertical"></i></a></li>-->
-							<li><a class="nav-links homebtn navactbtn" href="https://technictm.github.io/home/">HOME</a></li>
-							<li><a class="nav-links glbtn" href="https://technictm.github.io/gallery/">GALLERY</a></li>
-							<li><a class="nav-links modbtn" href="#mods">MODS</a></li>
-						</ul>
-					</nav>
+		<div class="nav-container">
+			<nav class="navbar">
+				<h1 id="navbar-logo">ANI SUPER</h1>
+				<div class="menu-toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
 				</div>
-				<div class="nav-containers"></div>
-				<div class="homesecinfo">
-					<button class="GameBtn" onclick="Game()"><i class="fa-solid fa-gamepad"></i></button>
-					<div id="snackbar-cs">Comming Soon...</div>
-					<img src="img/technictitle.png" alt="logo" class="homelogotitle">
+				<ul class="nav-menu">
+					<li><a href="" class="nav-links nav-links-btn">בית</a></li>
+					<li><a href="#" class="nav-links">דפוס</a></li>
+					<li><a href="indexy.html" class="nav-links">אטרקציות לאירועים</a></li>
+					<li><a href="#" class="nav-links">שאלות נפוצות</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="undernav"></div>
+		<div class="languageb" onclick="language()"><i class="fa-solid fa-globe"></i></div>
+		<div class="languagebox" id="lb">
+			<div class="lang-menu">
+				<ul class="lang-ul">
 					<br>
+					<li class="lang-li">
+						<a class="lang-a he" href=""><img class="ilicon" src="img/il.svg" alt=""></a>
+					</li>
 					<br>
+					<li class="lang-li">
+						<a class="lang-a en" href="index(en).html"><img class="enicon" src="img/en.svg" alt=""></a>
+					</li>
 					<br>
-					<br>
-					<div class="homeinfobtndiv"><a class="homeinfobtn" href="#il">Click Here For More Information</a></div>
-				</div>
-				<div class="blackhomefade"></div>
+				</ul>
 			</div>
-		</section>
-		<div class="blackhomeline"></div>
-		<!--<section class="socialcomsec">
-			<div class="blackarrow"></div>
-			<img src="img/technicyt.png" alt="" class="socialimg yt">
-			<img src="img/technictwitter.png" alt="" class="socialimg tw">
-		</section>
-		<section class="teamsec">
-			<p class="teamtxt">Our Team</p>
-			<div class="teamline"></div>
-			<div class="swiper mySwiper">
-				<div class="swiper-wrapper">
-				  <div class="swiper-slide">
-					<img src="img/coolbg.png" />
-				  </div>
-				  <div class="swiper-slide">
-					<img src="img/TB.png" />
-				  </div>
-				  <div class="swiper-slide">
-					<img src="img/coolbg.png" />
-				  </div>
-				  <div class="swiper-slide">
-					<img src="img/TB.png" />
-				  </div>
+		</div>
+		<section class="homesection">
+			<video class="bgvh" autoplay loop muted>
+				<source src="video/bg.mp4" type="video/mp4" />
+			</video>
+			<div class="blackhomeopacity"></div>
+			<div class="texthomesection">
+				<span class="text1">Ani Super</span>
+				<span class="text2">כשטכנולוגיה ואומנות נפגשים</span>
+			</div>
+			<a href="#sdb" class="scroll-down" data-aos="fade-up" data-aos-delay="3000">
+				<div class="mouse">
+					<span></span>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
-			  </div>
-		  
-			  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		  
-			  <script>
-				var swiper = new Swiper(".mySwiper", {
-				  spaceBetween: 30,
-				  loop: true,
-				  effect: "fade",
-				  autoplay: {
-          			delay: 10000,
-          			disableOnInteraction: false,
-        		  },
-				  navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				  },
-				  scrollbar: {
-					el: ".swiper-pagination",
-          			type: "progressbar",
-          			//hide: true,
-					//clickable: true,
-				  },
-				});
-			  </script>
+				<div class="arrow">
+					<span></span>
+				</div>
+			</a>
+		</section>
+		<!--<section class="things">
+			<h1 class="thingstxt" data-aos="fade-up" data-aos-delay="500">השירותים שלנו‎</h1>
+			<div class="thingstxtline" data-aos="fade-up" data-aos-delay="500"></div>
+			<div class="thingscardbx">
+				<div class="thingscard" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/th4.png" alt="" class="thgicon">
+					<h2 class="thgtitle">הפקות אירועים</h2>
+					<h5 class="thgtxt"></h5>
+				</div>
+				<div class="thingscard" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/th5.png" alt="" class="thgicon">
+					<h2 class="thgtitle">פיתרונות צילום ומדיה<br>בטכנולוגיה מתקדמת</h2>
+					<h5 class="thgtxt"></h5>
+				</div>
+				<div class="thingscard" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/th2.png" alt="" class="thgicon">
+					<h2 class="thgtitle">מציאות מדומה</h2>
+					<h5 class="thgtxt"></h5>
+				</div>
+				<div class="thingscard" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/th3.png" alt="" class="thgicon">
+					<h2 class="thgtitle">צילום אקסטרים</h2>
+					<h5 class="thgtxt"></h5>
+				</div>
+				<div class="thingscard" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/th1.png" alt="" class="thgicon">
+					<h2 class="thgtitle">עריכת קליפים</h2>
+					<h5 class="thgtxt"></h5>
+				</div>
+				<div class="thingscard" data-aos="zoom-in" data-aos-delay="500">
+					<img src="img/th1.png" alt="" class="thgicon">
+					<h2 class="thgtitle">הפקות אירועים</h2>
+					<h5 class="thgtxt"></h5>
+				</div>
+			</div>
 		</section>-->
-		<section class="infosec">
-			<div id="il"></div>
-			<!--<div class="infotxt">
-				<br>
-				<h1 class="infotxttitle">What Is Technic?</h1>
-				<br>
-				<h4 class="infotxttext">Technic is a <b>Minecraft: Java Edition</b> Mod team that making more updates to Minecraft. <br><br> Our goal is to give you the filling of playing vanilla minecraft in a new versions/updates of the game.</h4>
-				<br>
-			</div>-->
-			<div class="WhatIs">
-				<div class="WhatIsTxtBx">
-					<h1 class="WhatIsTitle">What Is Technic?</h1>
-					<br>
-					<p class="WhatIsTxt">Technic is a <b>Minecraft: Java Edition</b> Mod team <br> that making more updates to Minecraft. <br><br> Our goal is to give you the filling of playing vanilla minecraft <br> but with new updates in the game.</p>
+		<div id="sdb"></div>
+		<section class="contact">
+			<div class="content">
+				<h2 data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">צרו קשר</h2>
+			</div>
+			<div class="containercontact" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">
+				<div class="contactinfo">
+					<div class="box">
+						<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+						<div class="infotext">
+							<h3>מיקום</h3>
+							<a href="https://goo.gl/maps/q3ig2ve2gZ3eHW9H9" class="contacta">ישראל</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+						<div class="infotext">
+							<h3>טלפון</h3>
+							<a class="contacta" href="tel:+972544424292">+972544424292</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+						<div class="infotext">
+							<h3>אימייל</h3>
+							<p>
+							<a class="email1 contacta" href="mailto:eyalsuny@gmail.com">eyalsuny@gmail.com</a>
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="WhatIsImgBx">
-					<img src="img/tchr.png" alt="copper gollem render" class="tri">
+				<div class="contactForm">
+					<form action="sendmail.php" method="POST">
+						<h2>הזמנת מוצר</h2>
+						<div class="row">
+							<div class="inputBox">
+								<input type="text" name="name" required="required">
+								<span>שם מלא</span>
+							</div>
+							<div class="inputBox">
+								<input type="email" name="emailaddress" required="required">
+								<span>אימייל</span>
+							</div>
+							<div class="inputBox">
+								<input type="text" name="phone" required="required">
+								<span>מספר טלפון</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="inputBox">
+								<select name="type" required="required" >
+									<option>בחירת סוג אירוע</option>
+									<option>חתונה</option>
+									<option>בר/בת מצווה</option>
+									<option>אירוע חברה</option>
+									<option>אחר</option>
+								</select>
+							</div>
+							<div class="inputBox">
+								<select name="what" required="required">
+									<option>בחירת מוצר</option>
+									<option>מגנטים</option>
+									<option>בלוקים</option>
+									<option>עמדת צילום רקעים מתחלפים</option>
+									<option>קליפ</option>
+									<option>תפאורה</option>
+								</select>
+							</div>
+							<div class="inputBox">
+								<input name="date" required="required">
+								<span>תאריך</span>
+							</div>
+						</div>
+						<div class="inputBox">
+							<textarea type="text" name="message" required="required"></textarea>
+							<span>הודעה</span>
+						</div>
+						<div class="inputBox">
+							<input type="submit" name="" value="שלח">
+						</div>
+					</form>
 				</div>
 			</div>
-			<div class="Dis">
-				<div class="DisTxtBx">
-					<h1 class="DisTitle">Discord!</h1>
-					<br>
-					<ul class="DisList"><li> Have questions? </li><li> Found a bug? </li><li> Want to see exclusive, upcoming content? </li><li> Want to share, inspire people with your work/artwork? </li><li> Want to take part in our Discord exclusive Mob Votes? </li></ul><br><p class="DisTxt"> For that, join our discord server</p>
-					<br>
-					<br>
-					<a href="https://discord.gg/bbRfB2ETRj" class="DisLink">Join Our Discord!</a>
-				</div>
-				<div class="DisImgBx">
-					<img src="img/icy.png" alt="copper gollem render" class="iri">
-				</div>
-			</div>
-			<div class="pd">
-				<div class="pt">
-					<h1 class="ptitle">Patreon!</h1>
-					<br>
-					<p class="ptxt">Want to help us fix/prepare our projects before release? <br> Take part in exclusive mod feedback posts! <br><br><span class="ptxtc">GIVE US YOUR IDEAS!!</span></p>
-					<br>
-					<br>
-					<a href="https://www.patreon.com/tchnic" class="PatreonLink">Visit Our Patreon!</a>
-				</div>
-				<div class="pi">
-					<img src="img/cgr.png" alt="copper gollem render" class="cgri">
-				</div>
-			</div>
-			<br>
-			<br>
 		</section>
-		<section class="teamsec">
+		<section class="slidershow">
+			<!--  data-aos="flip-up" data-aos-delay="500" data-aos-duration="1200" -> dir="rtl" <- (*לא חובה*) | <h1 class="swipertxt" data-aos="fade-up" data-aos-delay="1000">קצת תמונות מאירועים</h1>-->
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img class="imgsliderauto" src="team/2.png"></div>
-					<div class="swiper-slide"><img class="imgsliderauto" src="team/3.png"></div>
-					<div class="swiper-slide"><img class="imgsliderauto" src="team/4.png"></div>
+					<div class="swiper-slide">
+						<img src="comp/1.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/2.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/3.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/4.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/5.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/6.png" />
+					  </div>
+					  <!--<div class="swiper-slide">
+						<img src="comp/7.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/8.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/9.png" />
+					  </div>
+					  <div class="swiper-slide">
+						<img src="comp/10.png" />
+					  </div>-->
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
 			</div>
-			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-			<script>
-				  var swiper = new Swiper(".mySwiper", {
-					spaceBetween: 30,
-					centeredSlides: true,
-					loop: true,
-					effect: "fade",
-					autoplay: {
-					delay: 8000,
-					disableOnInteraction: false
-					},
-					pagination: {
-					el: ".swiper-pagination",
-					//type: "fraction",
-					//dynamicBullets: true,
-					clickable: true
-					},
-					navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev"
-					}
-				  });
-			</script>
 		</section>
-		<!--<div class="discordbox">
-			<div class="discordbtn" onclick="discorddisplay()"><img class="discordicon" src="img/discordw.svg" alt="discord"></div>
-			<iframe class="discordtab" src="https://discord.com/widget?id=891726410232770610&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-		</div>-->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+			  watchSlidesProgress: true,
+			  loop: true,
+			  slidesPerView: 6,
+			  autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			  }
+			});
+		</script>
+		<div class="CopyrightBx">
+			<p class="CopyrightTxt">copyright © 2022 Ani Super. All Rights Reserved.</p>
+		</div>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<script src="app.js"></script>
     </body>
 </html>
