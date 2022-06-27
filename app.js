@@ -1,3 +1,7 @@
+//----------------------\\
+  // > דברים ראשיים < \\
+//----------------------\\
+
 //menu nav
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.nav-menu');
@@ -9,19 +13,24 @@ menu.addEventListener('click', function() {
 })
 
 //discord tab
-function discorddisplay(){
+/*function discorddisplay(){
     const dis = document.querySelector('.discordtab');
     dis.classList.toggle('activate');
-}
+}*/
+
+
+//-----------------\\
+  // > דף הבית < \\
+//-----------------\\
 
 //video toggle
-function toggleVideo(){
+/*function toggleVideo(){
     const video = document.querySelector('.video');
     const vid = document.querySelector('.videobox');
     video.classList.toggle('activity')
     vid.currentTime = 0;
     vid.pause();
-}
+}*/
 
 //Game Snackbar
 function Game() {
@@ -29,3 +38,13 @@ function Game() {
   gs.className = "show";
   setTimeout(function(){ gs.className = gs.className.replace("show", ""); }, 3000);
 }
+
+
+//------------------\\
+  // > דף הבלוג < \\
+//------------------\\
+
+
+//-------------------\\
+  // > דף המודים < \\
+//-------------------\\
