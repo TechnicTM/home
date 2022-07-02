@@ -36,7 +36,6 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-thumb:hover {
     background-color: rgb(158, 78, 46);
-    cursor: url('other/iron_tech.cur'), auto;
 }
 
 html::-webkit-scrollbar-track {
@@ -65,7 +64,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    cursor: url('other/iron_tech.cur'), auto;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -265,7 +263,7 @@ body {
         border-top: 4px solid #731d19;
         border-left: 4px solid #731d19;
         letter-spacing: 1px;
-        cursor: url('other/copper_tech.cur'), auto;
+        cursor: pointer;
     }
     
     .modbtn:hover {
@@ -276,7 +274,7 @@ body {
         border-top: 4px solid #731d19;
         border-left: 4px solid #731d19;
         letter-spacing: 1px;
-        cursor: url('other/copper_tech.cur'), auto;
+        cursor: pointer;
     }
     
     .homebtn:hover {
@@ -287,7 +285,7 @@ body {
         border-top: 4px solid #731d19;
         border-left: 4px solid #731d19;
         letter-spacing: 1px;
-        cursor: url('other/copper_tech.cur'), auto;
+        cursor: pointer;
     }
 
     .GameBtn:hover {
@@ -295,7 +293,7 @@ body {
         border-right: 4px solid #db762e;
         border-top: 4px solid #731d19;
         border-left: 4px solid #731d19;
-        cursor: url('other/copper_tech.cur'), auto;
+        cursor: pointer;
     }
     
     /*.nav-links:hover {
@@ -385,7 +383,7 @@ body {
     border-right: 4px solid #5a1814;
     font-size: 1.3em;
     letter-spacing: 1px;
-    cursor: url('other/copper_tech.cur'), auto;
+    cursor: pointer;
 }
 
 .homeinfobtndiv {
@@ -413,9 +411,34 @@ body {
     background-color: rgb(151, 97, 40);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1160px) {
+    .homelogotitle {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 960px) {
     .homelogotitle {
         width: 85%;
+    }
+}
+
+@media screen and (max-width: 862px) {
+    /*.homesec {
+        min-height: 80vh;
+    }
+
+    .blacksechome {
+        min-height: 80vh;
+    }*/
+
+    .homelogotitle {
+        margin-top: 80px;
+    }
+    
+    .homeinfobtndiv {
+        opacity: 0;
+        display: none;
     }
 }
 
@@ -604,13 +627,20 @@ body {
 
 .WhatIsImgBx {
     position: absolute;
+    /* V לטצ׳ניק ילד של עידן V */
+    /*right: 20px;
+    top: -245px;*/
+    /* V לטצ׳ניק ילד החדש V */
     right: 20px;
-    top: -245px;
+    top: -10px;
 }
 
 .tri {
     width: auto;
-    height: 700px;
+    /* V לטצ׳ניק ילד של עידן V */
+    /*height: 700px;*/
+    /* V לטצ׳ניק ילד החדש V */
+    height: 320px;
 }
 
 .Dis {
@@ -661,7 +691,7 @@ body {
 .DisLink:hover {
     background-color: rgb(72, 77, 155);
     border: 2px solid rgb(43, 48, 112);
-    cursor: url('other/copper_tech.cur'), auto;
+    cursor: pointer;
 }
 
 .DisImgBx {
@@ -722,18 +752,25 @@ body {
 .PatreonLink:hover {
     background-color: rgb(109, 56, 35);
     border: 2px solid rgb(75, 36, 21);
-    cursor: url('other/copper_tech.cur'), auto;
+    cursor: pointer;
 }
 
 .pi {
     position: absolute;
-    right: -150px;
-    top: -40px;
+    /* V לקופר גולם של עידן V */
+    /*right: -150px;
+    top: -40px;*/
+    /* V לקופר גולם החדש V */
+    right: -10px;
+    top: -10px;
 }
 
 .cgri {
-    width: 720px;
     height: auto;
+    /* V לקופר גולם של עידן V */
+    /*width: 720px;*/
+    /* V לקופר גולם החדש V */
+    width: 350px;
 }
 
 @media screen and (max-width: 1045px) {
@@ -840,7 +877,7 @@ body {
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
     --swiper-navigation-color: rgb(218, 142, 58);
-    cursor: url('other/copper_tech.cur'), auto;
+    cursor: pointer;
   }
 
   .swiper-pagination {
