@@ -213,7 +213,7 @@ body {
         border-radius: 2px; /* Rounded borders */
         padding: 16px; /* Padding */
         position: fixed; /* Sit on top of the screen */
-        z-index: 1; /* Add a z-index if needed */
+        z-index: 10000; /* Add a z-index if needed */
         left: 50%; /* Center the snackbar */
         bottom: 30px; /* 30px from the bottom */
       }
@@ -250,14 +250,6 @@ body {
         color: rgb(218, 142, 58);
         font-weight: 900;
     }*/
-    
-    .ytbtn:hover {
-        background-color: rgb(255, 0, 0);
-    }
-    
-    .twbtn:hover {
-        background-color: rgb(0, 132, 255);
-    }
 
     .glbtn:hover {
         /*background-color: rgb(179, 103, 33);
@@ -339,7 +331,7 @@ body {
 .homesec {
     background-image: url(img/TB.png);
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     height: auto;
     z-index: -3;
     background-size: 200vh;
@@ -348,7 +340,7 @@ body {
 .blacksechome {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     z-index: -2;
 }
 
@@ -410,7 +402,7 @@ body {
     width: 100%;
     min-height: 90vh;
     position: absolute;
-    bottom: 0;
+    bottom: 10vh;
     left: 0;
     background: linear-gradient(rgba(0,0,0,0), rgba(26, 26, 26, 1));
     /*background-color: rgb(255, 0, 0);*/
