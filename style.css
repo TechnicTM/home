@@ -38,6 +38,10 @@ html::-webkit-scrollbar-thumb:hover {
     background-color: rgb(158, 78, 46);
 }
 
+html::-webkit-scrollbar-thumb:active {
+    background-color: rgb(138, 48, 12);
+}
+
 html::-webkit-scrollbar-track {
     background-color: rgb(99, 35, 31);
     border-left: 2px solid black;
@@ -193,7 +197,7 @@ body {
         border-bottom: 4px solid #731d19;
         border-right: 4px solid #731d19;
         position: absolute;
-        bottom: 10px;
+        top: 10px;
         right: 10px;
         z-index: 200;
         transition: all 0.2s ease-out;
@@ -293,7 +297,7 @@ body {
         border-right: 4px solid #db762e;
         border-top: 4px solid #731d19;
         border-left: 4px solid #731d19;
-        cursor: pointer;
+        cursor: wait;
     }
     
     /*.nav-links:hover {
@@ -308,7 +312,7 @@ body {
         background: var(--white);
     }
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 545px){
         .homebtn {
             margin-right: 10px;
             padding: 5px 10px;
@@ -321,6 +325,14 @@ body {
 
         .modbtn {
             padding: 5px 10px;
+        }
+    }
+    
+    @media screen and (max-width: 405px){
+        .GameBtn {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
         }
     }
 
@@ -442,7 +454,7 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .homelogotitle {
         width: 95%;
     }
@@ -616,13 +628,13 @@ body {
 .WhatIsTitle {
     color: #fff;
     font-family: 'mct';
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .WhatIsTxt {
     color: #fff;
     font-family: 'duck';
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .WhatIsImgBx {
@@ -665,18 +677,19 @@ body {
 .DisTitle {
     color: #fff;
     font-family: 'mct';
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .DisList {
     color: #fff;
     font-family: 'duck';
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .DisTxt {
     color: rgb(92, 101, 239);
     font-family: 'duck';
+    text-shadow: 1px 1px rgb(46, 52, 129);
 }
 
 .DisLink {
@@ -727,17 +740,17 @@ body {
 .ptitle {
     color: #fff;
     font-family: 'mct';
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .ptxt {
     color: #fff;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .ptxtc {
     color: rgb(158, 78, 46);
-    text-shadow: 0px 0px #731d1900;
+    text-shadow: 1px 1px rgb(90, 51, 35);
 }
 
 .PatreonLink {
