@@ -103,7 +103,7 @@ body {
         height: 80px;
         width: 90%;
         max-width: 1720px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     
     #navbar-logo {
@@ -139,6 +139,7 @@ body {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+	margin-top: 20px;
     }
     
     .nav-links {
