@@ -122,21 +122,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // > blog page < \\
 //------------------\\
 
-// -- blogs on full screen -- \\
-// blog one
-  function blogOne() {
-    const boxOne = document.getElementById('blog-box1');
-    const section = document.getElementById('sect1');
-    boxOne.classList.remove('hide');
-    section.classList.add('hide');
-  }
-  function blogOneX() {
-    const boxOne = document.getElementById('blog-box1');
-    const section = document.getElementById('sect1');
-    boxOne.classList.add('hide');
-    section.classList.remove('hide');
-  }
-
 // -- pages of the blogs -- \\
 // page one
     function pageOne() {
