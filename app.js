@@ -12,6 +12,38 @@ menu.addEventListener('click', function() {
     menuBlack.classList.toggle('active');
 })*/
 
+setTimeout(function() {
+  document.querySelector("body").classList.add("show");
+}, 250);
+
+function homeLink() {
+  document.querySelector("body").style.opacity = 0;
+  setTimeout(function(){
+    window.location.replace("index.html");
+  }, 250);
+}
+
+function blogLink() {
+  document.querySelector("body").style.opacity = 0;
+  setTimeout(function(){
+    window.location.replace("blog.html");
+  }, 250);
+}
+
+function villagerBruteBlogLink() {
+  document.querySelector("body").style.opacity = 0;
+  setTimeout(function(){
+    window.location.replace("villagerBruteBlog.html");
+  }, 250);
+}
+
+function websiteBlogLink() {
+  document.querySelector("body").style.opacity = 0;
+  setTimeout(function(){
+    window.location.replace("websiteBlog.html");
+  }, 250);
+}
+
 
 //-----------------\\
   // > home page < \\
@@ -49,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const next = document.querySelector(".next");
   let currentSlide = 0;
   let timer;
+  let timerCount = 0;
 
   function showSlide(index) {
     img1.forEach((img1, i) => {
@@ -83,11 +116,20 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function startTimer() {
-    timer = setInterval(nextSlide, 5000); // Change slide duration here (in milliseconds)
+    timer = setInterval(addonet, 625); // Change slide duration here (in milliseconds)
   }
 
   function stopTimer() {
     clearInterval(timer);
+  }
+  
+  function addonet() {
+    timerCount+=0.625;
+    // console.log(timerCount);
+    if (timerCount == 5) {
+      timerCount = 0;
+      nextSlide();
+    }
   }
 
   function handleDotClick(index) {

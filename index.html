@@ -9,7 +9,7 @@
 		<meta content="Technic is a Minecraft: Java Edition Modding team that makes more updates to Minecraft through Mods. Our goal is to give you the feeling of playing vanilla Minecraft. Learn More About Us Here" property="og:description" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="style.css">
-		<link rel="shortcut icon" type="image/webp" href="img/ticon.webp">
+		<link rel="shortcut icon" type="image/webp" href="img/TechnicIconPng.webp">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<script src="https://kit.fontawesome.com/ceab6117ab.js" crossorigin="anonymous"></script>
@@ -18,25 +18,24 @@
 	<body>
 		<section class="homesec">
 			<div class="blacksechome">
-				<!--<a href="atargallery.html"><i class="fa-solid fa-image gallerybtn"></i></a>-->
+				<div class="topFade"></div>
 				<div class="nav-container">
 					<nav class="navbar">
-						<!--<h1 id="navbar-logo">TECHNIC<img class="textlogo" src="img/logotext.png"></h1>-->
 						<ul class="nav-menu">
 							<!--<li><a class="nav-links ytbtn" href="https://www.youtube.com/channel/UCEbhxAHWDbAijGxbkC9AuLA?sub_confirmation=1"><i class="fa fa-youtube-play"></i></a></li>
 							<li><a class="nav-links twbtn" href="https://twitter.com/technic00823661"><i class="fa fa-twitter"></i></a></li>-->
-							<li><a class="nav-links homebtn navactbtn" href="">HOME</a></li>
-							<li><a class="nav-links glbtn" href="blog.html">BLOG</a></li>
+							<li><a class="nav-links homebtn navactbtn" onclick="homeLink()">HOME</a></li>
+							<li><a class="nav-links glbtn" onclick="blogLink()">BLOG</a></li>
 							<li><a class="nav-links modbtn" onclick="Game()">MODS</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="nav-containers"></div>
 				<div class="homesecinfo">
+					<img class="bottomImg" src="img/TBNB.png" alt="">
 					<div id="snackbar-cs">Comming Soon...</div>
 					<img src="img/TechnicHome.webp" alt="logo" class="homelogotitle" href="#dwn">
 				</div>
-				<div class="blackhomefade"></div>
 			</div>
 		</section>
 		<!--<div class="blackhomeline"></div>-->
@@ -45,16 +44,16 @@
 			<div class="blogCont">
 				<div class="blogBox">
 					<div class="blogBoxImg">
-						<a href="villagerBruteBlog.html"><img src="img/vbb.webp" alt="img" class="blogImg"></a>
+						<a onclick="villagerBruteBlogLink()"><img src="img/vb1.webp" alt="img" class="blogImg"></a>
 					</div>
 					<div class="blogBoxTxt">
 						<p class="blog-main-title">Villager Brute Release</p>
-						<p class="blog-second-title"><span class="blog-type-r">Release</span><i> - Dec 21, 2022</i></p>
+						<p class="blog-second-title"><span class="blog-type-r">Release</span> - Dec 21th, 2022</p>
 						<p class="blog-info-txt">Greetings players! Today, we officially released our first mod Villager Brute! While working on a bigger and higher quality mods, we decided to release this VERY early version of the mod for now, while we work on the bigger release of this mod. While we work on Raid&Trade, we are working on our biggest mod we will probably make called 'Snow Update', so expect it to be released in the next few months to a year.</p>
 					</div>
 				</div>
 			</div>
-			<a href="blog.html" class="moreBlog">View All Blogs</a>
+			<a onclick="blogLink()" class="moreBlog">View All Blogs</a>
 		</section>
 		<section class="infosec">
 			<div id="dwn"></div>
@@ -65,12 +64,11 @@
 				<h4 class="infotxttext">Technic is a <b>Minecraft: Java Edition</b> Mod team that making more updates to Minecraft. <br><br> Our goal is to give you the filling of playing vanilla minecraft in a new versions/updates of the game.</h4>
 				<br>
 			</div>-->
-			<img src="img/flipFadeMcR.png" alt="" class="mcFadeF">
 			<div class="WhatIs">
 				<div class="WhatIsTxtBx">
 					<h1 class="WhatIsTitle">What Is Technic?</h1>
 					<br>
-					<p class="WhatIsTxt">Technic is a <b>Minecraft: Java Edition</b> Modding team <br> that makes more updates to Minecraft. <br> Our goal is to give you the feeling of playing vanilla minecraft <br> but with new updates in the game. <a href="index.html">Learn More About Us Here</a></p>
+					<p class="WhatIsTxt">Technic is a <b>Minecraft: Java Edition</b> Modding team <br> that makes more updates to Minecraft. <br> Our goal is to give you the feeling of playing <br> vanilla minecraft but with new updates in the game. <br><a onclick="websiteBlogLink()">Learn More About Us Here</a></p>
 				</div>
 				<div class="WhatIsImgBx">
 					<img src="img/TechnicMascot.webp" alt="copper gollem render" class="tri">
@@ -104,7 +102,6 @@
 					<img src="img/iligerIceoliger.webp" alt="copper gollem render" class="cgri">
 				</div>
 			</div>
-			<img src="img/fadeMc.png" alt="" class="mcFade">
 		</section>
 		<section class="teamsec">
 			<div class="slider-container">
@@ -234,8 +231,10 @@
 				  <div class="sliderInfo"></div>
 				  <div class="sliderInfo"></div>
 				</div>
-				<div class="arrows">
-					 <span class="prev">
+				<!-- <div class="arrows">
+				</div> -->
+				<div class="dots">
+					<span class="prev">
 						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="37.5" viewBox="0 0 24 25" fill="#F86D19">
 						  <g filter="url(#filter0_d_213_57)">
 							<path d="M18 2.5H14V6.5H18V2.5Z" fill=""/>
@@ -301,88 +300,86 @@
 						  </defs>
 						</svg>
 					</span>
-					  <span class="next">
-						  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="37.5" viewBox="0 0 24 25" fill="#F86D19">
-						  <g filter="url(#filter5_d_17_38)">
-							<path d="M6 2.5H10V6.5H6V2.5Z" fill=""/>
-						  </g>
-						  <g filter="url(#filter6_d_17_38)">
-							<path d="M14 10.5H10V6.5H14V10.5Z" fill=""/>
-						  </g>
-						  <g filter="url(#filter7_d_17_38)">
-							<path d="M14 14.5V10.5H18V14.5H14Z" fill=""/>
-						  </g>
-						  <g filter="url(#filter8_d_17_38)">
-							<path d="M10 18.5H14V14.5H10V18.5Z" fill=""/>
-						  </g>
-						  <g filter="url(#filter9_d_17_38)">
-							<path d="M10 18.5V22.5H6V18.5H10Z" fill=""/>
-						  </g>
-						  <defs>
-							<filter id="filter5_d_17_38" x="6" y="2.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							  <feOffset dx="1.5" dy="1.5"/>
-							  <feComposite in2="hardAlpha" operator="out"/>
-							  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-							  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
-							  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
-							</filter>
-							<filter id="filter6_d_17_38" x="10" y="6.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							  <feOffset dx="1.5" dy="1.5"/>
-							  <feComposite in2="hardAlpha" operator="out"/>
-							  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-							  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
-							  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
-							</filter>
-							<filter id="filter7_d_17_38" x="14" y="10.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							  <feOffset dx="1.5" dy="1.5"/>
-							  <feComposite in2="hardAlpha" operator="out"/>
-							  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-							  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
-							  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
-							</filter>
-							<filter id="filter8_d_17_38" x="10" y="14.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							  <feOffset dx="1.5" dy="1.5"/>
-							  <feComposite in2="hardAlpha" operator="out"/>
-							  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-							  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
-							  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
-							</filter>
-							<filter id="filter9_d_17_38" x="6" y="18.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							  <feOffset dx="1.5" dy="1.5"/>
-							  <feComposite in2="hardAlpha" operator="out"/>
-							  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-							  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
-							  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
-							</filter>
-						  </defs>
+				  	<span class="dot active"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<span class="dot"></span>
+				  	<!-- Add more dots for additional images -->
+					<span class="next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="37.5" viewBox="0 0 24 25" fill="#F86D19">
+							<g filter="url(#filter5_d_17_38)">
+							  <path d="M6 2.5H10V6.5H6V2.5Z" fill=""/>
+							</g>
+							<g filter="url(#filter6_d_17_38)">
+							  <path d="M14 10.5H10V6.5H14V10.5Z" fill=""/>
+							</g>
+							<g filter="url(#filter7_d_17_38)">
+							  <path d="M14 14.5V10.5H18V14.5H14Z" fill=""/>
+							</g>
+							<g filter="url(#filter8_d_17_38)">
+							  <path d="M10 18.5H14V14.5H10V18.5Z" fill=""/>
+							</g>
+							<g filter="url(#filter9_d_17_38)">
+							  <path d="M10 18.5V22.5H6V18.5H10Z" fill=""/>
+							</g>
+							<defs>
+							  <filter id="filter5_d_17_38" x="6" y="2.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="1.5" dy="1.5"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
+							  </filter>
+							  <filter id="filter6_d_17_38" x="10" y="6.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="1.5" dy="1.5"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
+							  </filter>
+							  <filter id="filter7_d_17_38" x="14" y="10.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="1.5" dy="1.5"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
+							  </filter>
+							  <filter id="filter8_d_17_38" x="10" y="14.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="1.5" dy="1.5"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
+							  </filter>
+							  <filter id="filter9_d_17_38" x="6" y="18.5" width="5.5" height="5.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+								<feOffset dx="1.5" dy="1.5"/>
+								<feComposite in2="hardAlpha" operator="out"/>
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_38"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_38" result="shape"/>
+							  </filter>
+							</defs>
 						</svg>
-					</span>
-				</div>
-				<div class="dots">
-				  <span class="dot active"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <!-- Add more dots for additional images -->
+				  	</span>
 				</div>
 			</div>
 			<!-- <div class="swiper mySwiper">
