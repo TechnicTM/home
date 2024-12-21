@@ -19,28 +19,28 @@ setTimeout(function() {
 function homeLink() {
   document.querySelector("body").style.opacity = 0;
   setTimeout(function(){
-    window.location.replace("index.html");
+    window.location.replace("https://technictm.github.io/home/");
   }, 250);
 }
 
 function blogLink() {
   document.querySelector("body").style.opacity = 0;
   setTimeout(function(){
-    window.location.replace("blog.html");
+    window.location.replace("https://technictm.github.io/blog/");
   }, 250);
 }
 
 function villagerBruteBlogLink() {
   document.querySelector("body").style.opacity = 0;
   setTimeout(function(){
-    window.location.replace("villagerBruteBlog.html");
+    window.location.replace("https://technictm.github.io/villagerBruteBlog/");
   }, 250);
 }
 
 function websiteBlogLink() {
   document.querySelector("body").style.opacity = 0;
   setTimeout(function(){
-    window.location.replace("websiteBlog.html");
+    window.location.replace("https://technictm.github.io/websiteBlog/");
   }, 250);
 }
 
